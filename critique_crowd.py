@@ -24,7 +24,8 @@ PHASES = {
         "fields": {
             "prompt": {
                 "type": "radio",
-                "options": ["Narrative Event", "Expository Paragraph","Persuasive Paragraph", "Comparitive Paragraph"]
+                "options": ["Narrative Event", "Expository Paragraph","Persuasive Paragraph", "Comparitive Paragraph"],
+                "label": "What kind of essay do you choose?"
             },
             "document": {
                 "type": "text_area",
