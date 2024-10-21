@@ -27,6 +27,10 @@ PHASES = {
                 "options": ["Narrative Event", "Expository Paragraph","Persuasive Paragraph", "Comparitive Paragraph"],
                 "label": "What kind of paragraph do you choose?"
             },
+            "emotion": {
+                "type": "checkbox",
+                "label": "Check for emotion?"
+            },
             "document": {
                 "type": "text_area",
                 "height": 200,
@@ -49,6 +53,9 @@ Please provide them feedback on how well they followed those intructions and pro
         2. Prompt
                 2 points - The paragraph meets the requirements of the prompt
                 0 points - The paragraph does not meet the requirements of the prompt. 
+        2. Emotion
+                2 points - The paragraph conveys a strong emotion
+                0 points - The paragraph does not convey a strong emotion
                 """,
         "allow_revisions": True,
         "allow_skip": False,
