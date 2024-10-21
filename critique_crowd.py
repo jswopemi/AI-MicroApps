@@ -25,7 +25,7 @@ PHASES = {
             "prompt": {
                 "type": "radio",
                 "options": ["Narrative Event", "Expository Paragraph","Persuasive Paragraph", "Comparitive Paragraph"]
-            }
+            },
             "document": {
                 "type": "text_area",
                 "height": 200,
