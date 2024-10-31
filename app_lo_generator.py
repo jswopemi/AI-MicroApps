@@ -210,28 +210,28 @@ PHASES = {
             },
             "preferences_2": {
                 "type": "markdown",
-                "body": """<h3>Webb's Depth of Knowledge</h3><p>Focus on these specific cognition goals:</p>""",
+                "body": """<h3>Bloom's Taxonomy</h3><p>Focus on these specific cognition goals:</p>""",
                 "unsafe_allow_html": True,
                 "showIf": {"request_type": ["Provide learning objectives based on the content", "Suggest learning objectives based on the title"]}
             },
             "goal_remember": {
                 "type": "checkbox",
-                "label": "Recall",
+                "label": "Remember",
                 "showIf": {"request_type": ["Provide learning objectives based on the content", "Suggest learning objectives based on the title"]}
             },
             "goal_apply": {
                 "type": "checkbox",
-                "label": "Skill/Concept",
+                "label": "Apply",
                 "showIf": {"request_type": ["Provide learning objectives based on the content", "Suggest learning objectives based on the title"]}
             },
             "goal_evaluate": {
                 "type": "checkbox",
-                "label": "Strategic Thinking",
+                "label": "Evaluate",
                 "showIf": {"request_type": ["Provide learning objectives based on the content", "Suggest learning objectives based on the title"]}
             },
             "goal_understand": {
                 "type": "checkbox",
-                "label": "Extended Thinking",
+                "label": "Understand",
                 "showIf": {"request_type": ["Provide learning objectives based on the content", "Suggest learning objectives based on the title"]}
             },
             "goal_analyze": {
@@ -271,25 +271,25 @@ PHASES = {
             },
             {
                 "condition": {},
-                "prompt": """If I provide them, please focus on the following Webb's Depth of Knowledge levels: 
+                "prompt": """If I provide them, please focus on the following Blooms's Taxonomy Verbs: 
                 [Verbs List: 
                 """
             },
             {
                 "condition": {"goal_remember": True},
-                "prompt": "Recall"
+                "prompt": "Remember"
             },
             {
                 "condition": {"goal_apply": True},
-                "prompt": "Skill/Concept"
+                "prompt": "Apply"
             },
             {
                 "condition": {"goal_evaluate": True},
-                "prompt": "Strategic Thinking"
+                "prompt": "Evaluate"
             },
             {
                 "condition": {"goal_understand": True},
-                "prompt": "Extended Thinking"
+                "prompt": "Understand"
             },
             {
                 "condition": {"goal_analyze": True},
