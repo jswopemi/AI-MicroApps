@@ -6,12 +6,12 @@ PHASES = {
                 "type": "text_input",
                 "label": "What is your first name?",
             },
-            "animal": {
+            "sport": {
             	"type": "text_input",
-            	"label": "What is one of your favorite animal?"
+            	"label": "What is one of your favorite sport?"
             }
         },
-        "user_prompt": "My name is {name} and I like {animal}s. Write a sonnet about me and my activity.",
+        "user_prompt": "My name is {name} and I like this sport: {sport}. Write an epic paragraph about me playing that sport.",
     },
 }
 
