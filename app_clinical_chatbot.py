@@ -127,7 +127,7 @@ Chief Complaint: Shortness of breath, experienced for the past 2 weeks.
             "diagnosis": {
                 "type": "text_area",
                 "height": 200,
-                "label": "Establish a differential diagnosis for Donna.",
+                "label": "Establish a differential diagnosis for Donna. Provide at least two diagnoses options based on the symptoms that Donna described.",
             }
         },
         "phase_instructions": """The user will provide you with the patient's primary complaint and her differential diagnosis. You will provide feedback on the accuracy of their claim(s) based on the evidence they gathere in the conversation.
@@ -162,11 +162,16 @@ Chief Complaint: Shortness of breath, experienced for the past 2 weeks.
         1. Primary Complaint:
         2 points - The user has provided a primary complaint that is consistent with Donna's presentation and that they've extracted from the chat with Donna.
         0 points - The user has provided a primary complaint that is not consistent with Donna's presentation or they did not extract it from the chat with Donna..
+        2. Differential Diagnosis Quantity:
+        2 points - The user has provided at least 2 potential differential diagnosese.
+        1 points - The user has provided only 1 differential diagnosis. 
+        0 points - The user has provided no differential diagnosese.
         2. Differential Diagnosis:
-        2 points - The user has provided a differential diagnosis that is consistent with Donna's presentation and that they've extracted from the chat with Donna.
-        0 points - The user has provided a differential diagnosis that is not consistent with Donna's presentation or they did not extract it from the chat with Donna.
+        2 points - The user has provided at least 2 differential diagnosese that are both consistent with Donna's presentation and that they've extracted from the chat with Donna.
+        1 points - The user has provided only 1 differential diagnosese that is consistent with Donna's presentation and that they've extracted from the chat with Donna.
+        0 points - No potential diagnosese presented are consistent with Donna's presentation or they did not extract it from the chat with Donna.
         """,
-        "minimum_score": 2,
+        "minimum_score": 3,
     }
 
 }
