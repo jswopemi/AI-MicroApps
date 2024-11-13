@@ -40,11 +40,16 @@ PHASES = {
                 "image": "app_images/donna.webp",
                 "caption": "Your new patient Donna is a 65-year old woman with a history of hypertension and currently experiencing shortness of breath.",
             },
+            "chat": {
+                "type": "chat_input",
+                "max_messages": 10,
+                "placeholder": "Ask Donna something...",
+                "initial_assistant_message": "Hi Doctor, can you help me with my recent breathing issues?"
+            }
+        },
 
         
-        
-        }
-    }
+
 }
 
 
